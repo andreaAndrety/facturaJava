@@ -16,7 +16,6 @@ public class Cliente {
     private String identificacion;
     private String nombreCompleto;
     private String tipoDocumento;
-    private Date fecha;
 
     public Cliente(String identificacion, String nombreCompleto, String tipoDocumento) {
         this.identificacion = identificacion;
