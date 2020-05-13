@@ -14,8 +14,8 @@ public class Servicio extends Mercancia {
     private int numeroTecnicos;
     private String horarioServicio;
 
-    public Servicio(String descricionCompleta, int numeroTecnicos, String horarioServicio, String codigo, String nombre, Double precio, boolean esServicio) {
-        super(codigo, nombre, precio, esServicio);
+    public Servicio(String descricionCompleta, int numeroTecnicos, String horarioServicio, String idMercancia, String nombre, Double precio, boolean esServicio) {
+        super(idMercancia, nombre, precio, esServicio);
         this.descricionCompleta = descricionCompleta;
         this.numeroTecnicos = numeroTecnicos;
         this.horarioServicio = horarioServicio;

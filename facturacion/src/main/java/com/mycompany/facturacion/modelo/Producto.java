@@ -14,8 +14,8 @@ public class Producto extends Mercancia{
     private Double peso;
     private String unidadMedida;
 
-    public Producto(Double peso, String unidadMedida, String codigo, String nombre, Double precio, boolean esServicio) {
-        super(codigo, nombre, precio, esServicio);
+    public Producto(Double peso, String unidadMedida, String idMercancia, String nombre, Double precio, boolean esServicio) {
+        super(idMercancia, nombre, precio, esServicio);
         this.peso = peso;
         this.unidadMedida = unidadMedida;
     }

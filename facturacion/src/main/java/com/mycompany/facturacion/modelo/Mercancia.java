@@ -11,30 +11,30 @@ package com.mycompany.facturacion.modelo;
  */
 public class Mercancia {
     
-    private String codigo;
+    private String idMercancia;
     private String nombre;
     private Double precio;
     private boolean esServicio;
 
-    public Mercancia(String codigo, String nombre, Double precio, boolean esServicio) {
-        this.codigo = codigo;
+    public Mercancia(String idMercancia, String nombre, Double precio, boolean esServicio) {
+        this.idMercancia = idMercancia;
         this.nombre = nombre;
         this.precio = precio;
         this.esServicio = esServicio;
     }
 
     /**
-     * @return the codigo
+     * @return the idMercancia
      */
     public String getCodigo() {
-        return codigo;
+        return idMercancia;
     }
 
     /**
-     * @param codigo the codigo to set
+     * @param idMercancia the idMercancia to set
      */
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
+    public void setCodigo(String idMercancia) {
+        this.idMercancia = idMercancia;
     }
 
     /**
@@ -81,7 +81,7 @@ public class Mercancia {
 
     @Override
     public String toString() {
-        return "Mercancia{" + "codigo=" + codigo + ", nombre=" + nombre + ", precio=" + precio + ", esServicio=" + esServicio + '}';
+        return "Mercancia{" + "idMercancia=" + idMercancia + ", nombre=" + nombre + ", precio=" + precio + ", esServicio=" + esServicio + '}';
     }
     
     
