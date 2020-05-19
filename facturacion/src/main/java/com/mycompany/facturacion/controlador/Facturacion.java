@@ -185,8 +185,8 @@ public class Facturacion {
                             fecha=new Date();
                             
                             
-                            Factura factura = new Factura(identificacionTercero, listaMercancia, fecha, total);
-                            factura.toString();
+                            //Factura factura = new Factura(identificacionTercero, listaMercancia, fecha, total);
+                            //factura.toString();
                             break;
                            
                         default:

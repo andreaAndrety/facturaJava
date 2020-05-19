@@ -15,13 +15,13 @@ import java.util.Date;
 public class Factura {
     
     private String idcliente;
-    private ArrayList<Mercancia>  mercanciaLista;
+    private ArrayList<FacturaDetalle>  detalleFactura;
     private Date fecha;
     private Double valorToral;
 
-    public Factura(String idcliente, ArrayList<Mercancia> mercanciaLista, Date fecha, Double valorToral) {
+    public Factura(String idcliente, ArrayList<FacturaDetalle> detalleFactura, Date fecha, Double valorToral) {
         this.idcliente = idcliente;
-        this.mercanciaLista = mercanciaLista;
+        this.detalleFactura = detalleFactura;
         this.fecha = fecha;
         this.valorToral = valorToral;
     }
@@ -41,17 +41,17 @@ public class Factura {
     }
 
     /**
-     * @return the mercanciaLista
+     * @return the detalleFactura
      */
-    public ArrayList<Mercancia> getMarcanciaLista() {
-        return mercanciaLista;
+    public ArrayList<FacturaDetalle> getMarcanciaLista() {
+        return detalleFactura;
     }
 
     /**
-     * @param mercanciaLista the mercanciaLista to set
+     * @param detalleFactura the detalleFactura to set
      */
-    public void setMarcanciaLista(ArrayList<Mercancia> mercanciaLista) {
-        this.mercanciaLista = mercanciaLista;
+    public void setMarcanciaLista(ArrayList<FacturaDetalle> detalleFactura) {
+        this.detalleFactura = detalleFactura;
     }
 
     /**
@@ -84,7 +84,7 @@ public class Factura {
 
     @Override
     public String toString() {
-        return "Factura{" + "idcliente=" + idcliente + ", mercanciaLista=" + mercanciaLista + ", fecha=" + fecha + ", valorToral=" + valorToral + '}';
+        return "Factura{" + "idcliente=" + idcliente + ", detalleFactura=" + detalleFactura + ", fecha=" + fecha + ", valorToral=" + valorToral + '}';
     }
     
     
