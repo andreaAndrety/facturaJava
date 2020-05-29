@@ -17,6 +17,13 @@ public class FacturaDetalle {
     
     public FacturaDetalle(){}
 
+    public FacturaDetalle(Integer idFacturaDetalle, String idMercancia, Integer cantidad, Double valorTotal) {
+        this.idFacturaDetalle = idFacturaDetalle;
+        this.idMercancia = idMercancia;
+        this.cantidad = cantidad;
+        this.valorTotal = valorTotal;
+    }
+    
     /**
      * @return the idFacturaDetalle
      */
@@ -71,6 +78,11 @@ public class FacturaDetalle {
      */
     public void setValorTotal(Double valorTotal) {
         this.valorTotal = valorTotal;
+    }
+
+    @Override
+    public String toString() {
+        return "FacturaDetalle{" + "idFacturaDetalle=" + idFacturaDetalle + ", idMercancia=" + idMercancia + ", cantidad=" + cantidad + ", valorTotal=" + valorTotal + '}';
     }
     
     

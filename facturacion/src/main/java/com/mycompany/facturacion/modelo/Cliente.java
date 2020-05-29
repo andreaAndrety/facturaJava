@@ -16,6 +16,8 @@ public class Cliente {
     private String identificacion;
     private String nombreCompleto;
     private String tipoDocumento;
+    
+    public Cliente(){}
 
     public Cliente(String identificacion, String nombreCompleto, String tipoDocumento) {
         this.identificacion = identificacion;

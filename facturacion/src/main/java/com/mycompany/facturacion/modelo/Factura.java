@@ -17,13 +17,14 @@ public class Factura {
     private String idcliente;
     private ArrayList<FacturaDetalle>  detalleFactura;
     private Date fecha;
-    private Double valorToral;
-
-    public Factura(String idcliente, ArrayList<FacturaDetalle> detalleFactura, Date fecha, Double valorToral) {
+    private Double valorTotal;
+    
+    public Factura(){};
+    public Factura(String idcliente, ArrayList<FacturaDetalle> detalleFactura, Date fecha, Double valorTotal) {
         this.idcliente = idcliente;
         this.detalleFactura = detalleFactura;
         this.fecha = fecha;
-        this.valorToral = valorToral;
+        this.valorTotal = valorTotal;
     }
 
     /**
@@ -43,14 +44,14 @@ public class Factura {
     /**
      * @return the detalleFactura
      */
-    public ArrayList<FacturaDetalle> getMarcanciaLista() {
+    public ArrayList<FacturaDetalle> getFacturaDetalle() {
         return detalleFactura;
     }
 
     /**
      * @param detalleFactura the detalleFactura to set
      */
-    public void setMarcanciaLista(ArrayList<FacturaDetalle> detalleFactura) {
+    public void setFacturaDetalle(ArrayList<FacturaDetalle> detalleFactura) {
         this.detalleFactura = detalleFactura;
     }
 
@@ -69,22 +70,22 @@ public class Factura {
     }
 
     /**
-     * @return the valorToral
+     * @return the valorTotal
      */
-    public Double getValorToral() {
-        return valorToral;
+    public Double getValorTotal() {
+        return valorTotal;
     }
 
     /**
-     * @param valorToral the valorToral to set
+     * @param valorTotal the valorTotal to set
      */
-    public void setValorToral(Double valorToral) {
-        this.valorToral = valorToral;
+    public void setValorTotal(Double valorTotal) {
+        this.valorTotal = valorTotal;
     }
 
     @Override
     public String toString() {
-        return "Factura{" + "idcliente=" + idcliente + ", detalleFactura=" + detalleFactura + ", fecha=" + fecha + ", valorToral=" + valorToral + '}';
+        return "Factura{" + "idcliente=" + idcliente + ", detalleFactura=" + detalleFactura.toString() + ", fecha=" + fecha + ", valorTotal=" + valorTotal + '}';
     }
     
     
