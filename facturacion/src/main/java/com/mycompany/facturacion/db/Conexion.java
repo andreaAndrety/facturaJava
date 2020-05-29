@@ -17,8 +17,9 @@ public class Conexion {
     
     public Conexion (){
         try{
-            Class.forName("com.mysql.jdbc.Driver");
-            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/db_facturacion", "root", "123456");
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/db_facturacion?serverTimezone=UTC", "root", "123456");
+            System.out.println("conectado");
         }catch(Exception e){
             System.err.println("Error :"+ e);
         }
