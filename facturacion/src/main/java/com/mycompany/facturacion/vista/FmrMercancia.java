@@ -306,7 +306,7 @@ txt_Pre.transferFocus();        // TODO add your handling code here:
             pst.executeUpdate();
             int n=pst.executeUpdate();
             if (n>0){
-                JOptionPane.showMessageDialog(null,"Registro Guardado con Exito");
+                JOptionPane.showMessageDialog(null,"Mercancia Guardada con Exito");
                 
             }
        }catch(Exception e){
