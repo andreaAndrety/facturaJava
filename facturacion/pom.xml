@@ -19,7 +19,6 @@
             <version>8.0.19</version>
         </dependency>
     </dependencies>
-
-
-    
+    <name>Facturacion</name>
+    <description>Programa para factura , incluye creacion de clientes y de mercancia</description>
 </project>
